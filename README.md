@@ -8,6 +8,10 @@
 * CDN地址配置
 * 测试环境和生产环境分离打包
 
+## 环境依赖
+
+> 本项目依赖 Node.js，请先安装 Node.js
+
 ## 快速开始
 
 ```bash
@@ -23,6 +27,9 @@ yarn
 ## 常用命令
 
 ```bash
+# 开启mock服务
+yarn mock
+
 # 开启本地服务，实时热重载
 yarn serve
 
@@ -51,6 +58,7 @@ yarn lint
     │     ├── App.vue                         根组件
     │     └── main.js                         入口文件
     ├── config                          配置项统一存放位置
+    ├── mock                            用于配置mock server的api
     ├── public                          这里的资源不会被wabpack构建
     ├── .env.development                用于配置本地服务器特有的环境变量
     ├── .env.production                 用于配置生产服务器特有的环境变量
@@ -60,7 +68,7 @@ yarn lint
 ## Todo
 
 * [ ] 图片压缩
-* [ ] mock api
+* [x] mock api
 * [ ] 多页
 
 ## License
