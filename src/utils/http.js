@@ -2,6 +2,7 @@ import 'nprogress/nprogress.css'
 import axios from 'axios'
 import qs from 'qs'
 import NProgress from 'nprogress'
+import { message } from 'element-ui'
 
 const Axios = axios.create({
   baseURL: process.env.VUE_APP_API,
@@ -31,7 +32,14 @@ Axios.interceptors.response.use(res => {
     let responese = res.data
     let status = responese.code && String(responese.code)
     if (status === '80') {
-      alert(responese.msg)
+      message({
+        message: responese.msg,
+        duration: 0,
+        showClose: true,
+        onClose () {
+          window.location.reload()
+        }
+      })
     }
     NProgress.done()
     return responese
