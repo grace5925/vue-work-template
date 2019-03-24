@@ -69,6 +69,7 @@ yarn lint
 
 * [ ] 图片压缩
 * [x] mock api
+* [ ] 前端防连点
 * [ ] 多页
 
 ## License
