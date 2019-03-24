@@ -50,7 +50,7 @@ yarn lint
     │     ├── api                             api统一管理
     │     ├── assets                          静态资源，这里的资源会被wabpack构建
     │     │     ├── images
-    │     │     └── sass
+    │     │     └── scss
     │     ├── views                           页面级组件
     │     ├── components                      组件
     │     ├── store                           vuex

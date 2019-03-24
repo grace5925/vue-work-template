@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+$demo_width: 750;
+
+@function vw ($px) {
+  @return ($px / $demo_width) * 100vw;
+}
