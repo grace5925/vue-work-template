@@ -21,6 +21,14 @@ module.exports = {
   chainWebpack: config => {
     config.resolve.alias
       .set('assets', path.join(__dirname, './src/assets'))
+    config.module
+      .rule('images')
+      .use('image-webpack-loader')
+      .loader('image-webpack-loader')
+      .options({
+        disable: true
+      })
+      .end()
   },
   configureWebpack: config => {
     loading && config.plugins.push(
