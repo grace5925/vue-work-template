@@ -69,7 +69,7 @@ yarn lint
 
 ## Todo
 
-* [ ] 图片压缩
+* [x] 图片压缩
 * [x] mock api
 * [ ] 前端防连点
 * [x] 骨架屏（loading）
