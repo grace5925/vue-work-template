@@ -55,6 +55,8 @@ yarn lint
     │     ├── components                      组件
     │     ├── store                           vuex
     │     ├── utils                           工具函数
+    │     ├── skeleton.js                     loading页面的渲染函数
+    │     ├── Skeleton.vue                    loading页面的结构
     │     ├── App.vue                         根组件
     │     └── main.js                         入口文件
     ├── config                          配置项统一存放位置
@@ -70,7 +72,7 @@ yarn lint
 * [ ] 图片压缩
 * [x] mock api
 * [ ] 前端防连点
-* [ ] 服务端渲染
+* [x] 骨架屏（loading）
 * [ ] 多页
 
 ## License
