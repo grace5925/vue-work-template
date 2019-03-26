@@ -1,8 +1,8 @@
 const express = require('express')
 const chalk = require('chalk')
 const app = express()
-const mockApi = require('../mock')
-const { getIp } = require('./utils')
+const mockApi = require('.')
+const { getIp } = require('../config/utils')
 const hostName = getIp() ? getIp() : 'localhost'
 const allowCrossDomain = function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*')
