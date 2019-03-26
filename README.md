@@ -71,7 +71,7 @@ yarn lint
 
 * [x] 图片压缩
 * [x] mock api
-* [ ] 前端防连点
+* [x] 前端防连点
 * [x] 骨架屏（loading）
 * [ ] 多页
 

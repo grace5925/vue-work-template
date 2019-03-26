@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
-    "mock": "nodemon config/server.js --port 3000",
+    "mock": "nodemon mock/server.js --port 3000",
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "build:test": "vue-cli-service build --dest a04 --mode staging",
