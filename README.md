@@ -73,6 +73,8 @@ yarn lint
 * [x] mock api
 * [x] 前端防连点
 * [x] 骨架屏（loading）
+* [ ] 常用api封装
+* [ ] 常用函数封装
 * [ ] 多页
 
 ## License
