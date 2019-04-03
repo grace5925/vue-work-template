@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>首页</h1>
     <img alt="Vue logo" src="@/assets/images/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -7,7 +8,7 @@
 
 <script>
 import '@/assets/scss/index.scss'
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'app',

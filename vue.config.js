@@ -1,11 +1,13 @@
 const path = require('path')
 const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin')
+const logger = require('./logger')
+const pages = logger.start()
 
 const loading = true
 
 module.exports = {
   publicPath: process.env.VUE_APP_CDN,
-  indexPath: 'index.html',
+  pages,
   transpileDependencies: [],
   css: {
     modules: false,
@@ -21,26 +23,6 @@ module.exports = {
   chainWebpack: config => {
     config.resolve.alias
       .set('assets', path.join(__dirname, './src/assets'))
-    config
-      .plugin('html')
-      .tap(args => {
-        args.map(item => {
-          if (process.env.NODE_ENV === 'production') {
-            item.minify = {
-              collapseWhitespace: true,
-              removeComments: true,
-              removeRedundantAttributes: true,
-              removeScriptTypeAttributes: true,
-              removeAttributeQuotes: false,
-              minifyCSS: true,
-              minifyJS: true,
-              removeStyleLinkTypeAttributes: true,
-              useShortDoctype: true
-            }
-          }
-        })
-        return args
-      })
     config.module
       .rule('images')
       .use('image-webpack-loader')
@@ -55,7 +37,9 @@ module.exports = {
       new SkeletonWebpackPlugin({
         webpackConfig: {
           entry: {
-            app: path.join(__dirname, './src/skeleton.js')
+            index: path.join(__dirname, './src/skeleton.js'),
+            about: path.join(__dirname, './src/skeleton.js'),
+            list: path.join(__dirname, './src/skeleton.js')
           }
         },
         minimize: true,

@@ -75,7 +75,7 @@ yarn lint
 * [x] 骨架屏（loading）
 * [ ] 常用api封装
 * [ ] 常用函数封装
-* [ ] 多页
+* [x] 多页
 
 ## License
 
