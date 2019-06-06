@@ -6,6 +6,7 @@ const loading = true
 module.exports = {
   publicPath: process.env.VUE_APP_CDN,
   indexPath: 'index.html',
+  productionSourceMap: false,
   transpileDependencies: [],
   css: {
     modules: false,
