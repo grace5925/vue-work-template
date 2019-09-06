@@ -45,6 +45,7 @@ yarn lint
 
 ## 目录结构
 
+```bash
     ├── README.md                       项目介绍
     ├── src
     │     ├── api                             api统一管理
@@ -66,6 +67,7 @@ yarn lint
     ├── .env.production                 用于配置生产服务器特有的环境变量
     ├── .env.staging                    用于配置测试服务器特有的环境变量
     └── vue.config.js                   配置文件
+```
 
 ## Todo
 
